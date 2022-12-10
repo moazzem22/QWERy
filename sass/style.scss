@@ -1,0 +1,27 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+  "navbarcolor": #FFA343,
+);
+
+$custom-fonts: (
+  "commonfont": 18px,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$font-sizes: map-merge($font-sizes, $custom-fonts);
+
+$navbar-light-active-color: blue;
+$navbar-light-color: #fff;
+$navbar-light-hover-color: blue;
+$input-bg: transparent;
+$input-border-color: transparent;
+$input-focus-bg: transparent;
+$input-placeholder-color: #fff;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
